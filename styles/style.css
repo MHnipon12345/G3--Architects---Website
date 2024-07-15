@@ -153,7 +153,27 @@ main > section{
 /* responsive media qurey */
 
 @media screen  and ( max-width: 576px){
-   .navbar, .nav_links {
+   .navbar,
+   .nav_links,
+   .teams {
     flex-direction: column;
    }
+   
+   .team_img_container{
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .our_feature{
+    margin-left: 20px;
+   }
+}
+
+/* medium size device */
+
+@media  screen and (min-width: 576px) and (max-width: 992px) {
+  .teams{
+    flex-direction: column;
+  }
+  .our_feature{
+    margin: 20px auto;
+  }
 }
